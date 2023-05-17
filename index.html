@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+        <script src="./js/bootstrap/bootstrap.bundle.min.js" defer></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Lissome</title>
+    </head>
+    <body class="position-relative" data-bs-spy="scroll" data-bs-target="#navbar">
+        <!-- Navbar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand text-uppercase" href="#">Lissome</a>
+                <!-- Burger Menu -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" href="#carousel">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#testimonials">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navbar -->
+        <!-- carousel -->
+        <div
+            id="carousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="2000"
+            data-bs-pause="false"
+        >
+            <div class="carousel-indicators">
+                <button data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image">
+                        <img src="./img/hero_img.jpg" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image">
+                        <img src="./img/p5.jpg" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image">
+                        <img src="./img/p3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="controls">
+                <button
+                    class="carousel-control-next"
+                    data-bs-target="#carousel"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <button
+                    class="carousel-control-prev"
+                    data-bs-target="#carousel"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            </div> -->
+        </div>
+        <!-- End of carousel -->
+        <!-- Main -->
+        <div>
+            <!-- services -->
+            <section id="services" class="container pt-100">
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1>Our Services</h1>
+                        <span class="line d-block"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-solid fa-palette fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Graphic designing</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-solid fa-code fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Codding</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-solid fa-image fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Photography</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-solid fa-shield-halved fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Hacking</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-solid fa-laptop fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">Web Designing</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                    <div class="service col-12 col-sm-6 col-lg-4 d-flex flex-column gap-3">
+                        <div
+                            class="icon d-flex justify-content-center align-items-center text-white bg-main-color"
+                        >
+                            <i class="fa-brands fa-figma fa-2x"></i>
+                        </div>
+                        <h4 class="text-uppercase m-0">UI Designing</h4>
+                        <p class="mb-5">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem
+                            incidunt sunt molestiae!
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- End of services -->
+            <!-- Portfolio -->
+            <section id="portfolio" class="row g-0 pt-60">
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p1.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p2.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p3.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p4.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p5.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item position-relative p-0 col-12 col-sm-6 col-lg-4">
+                    <div class="image">
+                        <img src="./img/p6.jpg" />
+                    </div>
+                    <div
+                        class="portfolio-overlay position-absolute top-0 start-0 text-white d-flex w-100 h-100 align-items-end opacity-0"
+                    >
+                        <div class="ps-4 pb-4 text-uppercase">
+                            <h3>Project title</h3>
+                            <h6>Project subtite</h6>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Portfolio -->
+            <!-- features -->
+            <section id="features" class="container pt-100">
+                <div class="row">
+                    <div class="col-12 section-intro">
+                        <h1>Our Features</h1>
+                        <span class="line d-block"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature d-flex col-12 col-sm-6 col-lg-4">
+                        <div
+                            class="icon me-3 d-flex justify-content-center align-items-center text-white bg-main-color rounded-circle"
+                        >
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <div class="info">
+                            <h5 class="text-uppercase m-0">feature</h5>
+                            <p class="mb-5">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                                incidunt inventore quibusdam accusamus esse.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of features -->
+            <!-- Team -->
+            <section id="team" class="row g-0 pt-60">
+                <div class="team-member position-relative p-0 col-12 col-sm-6 col-lg-3">
+                    <div class="avatar position-relative overflow-hidden">
+                        <div class="image">
+                            <img src="./img/team-8-800x800.jpg" />
+                        </div>
+                        <div
+                            class="social position-absolute w-100 py-2 bg-main-color d-flex justify-content-center align-items-center gap-2"
+                        >
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-facebook-f fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-instagram fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-twitter fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"><i class="text-white fa-brands fa-github fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info text-white text-center p-4">
+                        <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                        <p class="m-0 text-white">Full Stack Developer</p>
+                        <span class="line d-block"></span>
+                        <p class="text-white">
+                            Well skillful lorem Ipsum is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member position-relative p-0 col-12 col-sm-6 col-lg-3 even">
+                    <div class="avatar position-relative overflow-hidden">
+                        <div class="image">
+                            <img src="./img/team-3-800x800.jpg" />
+                        </div>
+                        <div
+                            class="social position-absolute w-100 py-2 bg-main-color d-flex justify-content-center align-items-center gap-2"
+                        >
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-facebook-f fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-instagram fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-twitter fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"><i class="text-white fa-brands fa-github fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info text-white text-center p-4">
+                        <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                        <p class="m-0 text-white">Full Stack Developer</p>
+                        <span class="line d-block"></span>
+                        <p class="text-white">
+                            Well skillful lorem Ipsum is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member position-relative p-0 col-12 col-sm-6 col-lg-3">
+                    <div class="avatar position-relative overflow-hidden">
+                        <div class="image">
+                            <img src="./img/team-4-800x800.jpg" />
+                        </div>
+                        <div
+                            class="social position-absolute w-100 py-2 bg-main-color d-flex justify-content-center align-items-center gap-2"
+                        >
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-facebook-f fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-instagram fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-twitter fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"><i class="text-white fa-brands fa-github fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info text-white text-center p-4">
+                        <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                        <p class="m-0 text-white">Full Stack Developer</p>
+                        <span class="line d-block"></span>
+                        <p class="text-white">
+                            Well skillful lorem Ipsum is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC
+                        </p>
+                    </div>
+                </div>
+                <div class="team-member position-relative p-0 col-12 col-sm-6 col-lg-3 even">
+                    <div class="avatar position-relative overflow-hidden">
+                        <div class="image">
+                            <img src="./img/team-6-800x800.jpg" />
+                        </div>
+                        <div
+                            class="social position-absolute w-100 py-2 bg-main-color d-flex justify-content-center align-items-center gap-2"
+                        >
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-facebook-f fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-instagram fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"
+                                    ><i class="text-white fa-brands fa-twitter fa-lg"></i
+                                ></a>
+                            </div>
+                            <div
+                                class="icon d-flex justify-content-center align-items-center border rounded-pill"
+                            >
+                                <a href="#"><i class="text-white fa-brands fa-github fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info text-white text-center p-4">
+                        <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                        <p class="m-0 text-white">Full Stack Developer</p>
+                        <span class="line d-block"></span>
+                        <p class="text-white">
+                            Well skillful lorem Ipsum is not simply random text. It has roots in a
+                            piece of classical Latin literature from 45 BC
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Team -->
+            <!-- Testimonials -->
+            <section id="testimonials" class="container pt-100 text-center">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link active"
+                                    id="testimonial1-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#testimonial1"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="testimonial1"
+                                    aria-selected="true"
+                                >
+                                    <img src="./img/team-8-800x800.jpg" class="rounded-circle" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="testimonial2-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#testimonial2"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="testimonial2"
+                                    aria-selected="true"
+                                >
+                                    <img src="./img/team-4-800x800.jpg" class="rounded-circle" />
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button
+                                    class="nav-link"
+                                    id="testimonial3-tab"
+                                    data-bs-toggle="tab"
+                                    data-bs-target="#testimonial3"
+                                    type="button"
+                                    role="tab"
+                                    aria-controls="testimonial3"
+                                    aria-selected="true"
+                                >
+                                    <img src="./img/team-3-800x800.jpg" class="rounded-circle" />
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div
+                                class="tab-pane fade show active"
+                                id="testimonial1"
+                                role="tabpanel"
+                                aria-labelledby="testimonial1-tab"
+                            >
+                                <div class="review pt-5">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="lead fst-italic">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Praesentium ea explicabo nisi quia blanditiis assumenda quos
+                                        veritatis sit deleniti porro nulla temporibus deserunt, iure
+                                        in labore incidunt quis eos. Accusamus sed excepturi
+                                        architecto.
+                                    </p>
+                                    <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                                    <p class="m-0">Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="testimonial2"
+                                role="tabpanel"
+                                aria-labelledby="testimonial2-tab"
+                            >
+                                <div class="review pt-5">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="lead fst-italic">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Praesentium ea explicabo nisi quia blanditiis assumenda quos
+                                        veritatis sit deleniti porro nulla temporibus deserunt, iure
+                                        in labore incidunt quis eos. Accusamus sed excepturi
+                                        architecto.
+                                    </p>
+                                    <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                                    <p class="m-0">Full Stack Developer</p>
+                                </div>
+                            </div>
+                            <div
+                                class="tab-pane fade"
+                                id="testimonial3"
+                                role="tabpanel"
+                                aria-labelledby="testimonial3-tab"
+                            >
+                                <div class="review pt-5">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="lead fst-italic">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Praesentium ea explicabo nisi quia blanditiis assumenda quos
+                                        veritatis sit deleniti porro nulla temporibus deserunt, iure
+                                        in labore incidunt quis eos. Accusamus sed excepturi
+                                        architecto.
+                                    </p>
+                                    <h5 class="m-0 text-uppercase mt-2">Mohamed Elgendy</h5>
+                                    <p class="m-0">Full Stack Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of  Testimonials -->
+            <!-- contact -->
+            <section id="contact" class="container pt-100">
+                <div class="row justify-content-center align-items-center">
+                    <div class="image col-12 col-lg-4 mb-5 mb-lg-0">
+                        <img src="./img/cntct.jpg" />
+                    </div>
+                    <form class="col-12 col-lg-6 offset-lg-1 needs-validation" novalidate>
+                        <div class="form-floating mb-4">
+                            <input
+                                type="name"
+                                class="form-control"
+                                id="floatingName"
+                                placeholder="e.g. mohamed adel"
+                                required
+                            />
+                            <label for="floatingName">Name</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide your name</div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="floatingInput"
+                                placeholder="name@example.com"
+                                required
+                            />
+                            <label for="floatingInput">Email address</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a valid email</div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <textarea
+                                class="form-control"
+                                id="floatingTextarea"
+                                placeholder="Leave a comment here"
+                                style="min-height: 150px"
+                                required
+                            ></textarea>
+                            <label for="floatingTextarea">Comments</label>
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide your comments</div>
+                        </div>
+                        <button type="submit" class="btn bg-main-color text-white text-uppercase">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <!-- End of contact -->
+            <!-- CTA -->
+            <section id="quote" class="py-5">
+                <div class="container py-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <h3 class="text-white text-uppercase">Let's build something great.</h3>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="btn btn-light">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of CTA -->
+            <!-- footer -->
+            <footer>
+                <div class="footer-top container">
+                    <div class="row gy-5">
+                        <div class="col-md-4">
+                            <h4 class="logo-text text-uppercase">Lissome</h4>
+                            <p>
+                                Praesent vulputate neque nec sem fermentum porttitor. Mauris eget
+                                dolor convallis, trista, dignissim sapien. Duis vel felis dictu
+                            </p>
+                            <div class="social-icons d-flex gap-3">
+                                <a href="#"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                                <a href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                                <a href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                                <a href="#"><i class="fa-brands fa-github fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-uppercase">Navigation</h5>
+                            <div class="footer-links">
+                                <a href="#" class="d-block mb-1">Services</a>
+                                <a href="#" class="d-block mb-1">Our Work</a>
+                                <a href="#" class="d-block mb-1">Team</a>
+                                <a href="#" class="d-block mb-1">Blog</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-uppercase">More</h5>
+                            <div class="footer-links">
+                                <a href="#" class="d-block mb-1">FAQ's</a>
+                                <a href="#" class="d-block mb-1">Privacy & Policy</a>
+                                <a href="#" class="d-block mb-1">Liscences</a>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h5 class="text-uppercase">Contact</h5>
+                            <div class="footer-links">
+                                <p class="mb">1234 Gehan Street, Mansoura, 9001</p>
+                                <p class="mb">2(555)316-06-42</p>
+                                <p class="mb">hello@yourdomain.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row justify-content-between gy-3">
+                            <div class="col-md-6">
+                                <p class="mb-0">&copy; ITI2023. All rights reserved</p>
+                            </div>
+                            <div class="col-auto">
+                                <p class="mb-0">Created with ❤️ by ELGENDY</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of footer -->
+        </div>
+        <!-- End of Main -->
+    </body>
+    <!-- Form Validation -->
+    <script>
+        // disabling form submissions if there are invalid fields
+        (function () {
+            "use strict";
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll(".needs-validation");
+            forms.forEach((form) => {
+                form.addEventListener(
+                    "submit",
+                    (event) => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add("was-validated");
+                    },
+                    false
+                );
+            });
+        })();
+    </script>
+</html>
